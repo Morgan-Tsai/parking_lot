@@ -9,7 +9,7 @@
 - 使用 `datetime` 操作日期時間與格式調整。
 - 以 `easyocr` 做光學字元辨識。
 - 以 `gradio` 做出成品。
-- 成品能夠以 Hugging Face Spaces 網址直接訪問,可以透過 Hugging Face Spaces 的連結:  參考成品。
+- 成品能夠以 Hugging Face Spaces 網址直接訪問,可以透過 Hugging Face Spaces 的連結: <https://huggingface.co/spaces/Morgan2800/parking_lot> 參考成品。
 - 可以重現（Reproducible）。
 
 ## 如何重現
@@ -22,4 +22,5 @@ conda env create -f environment.yml
 ```
 
 - 將 `data/` 資料夾中的 `car_plate_1.jpg`、`car_plate_2.jpg` 與 `car_plate_3.jpg` 放置於專案資料夾的 `data/` 資料夾中。
+
 - 啟動環境並執行 `python app.py` 並前往 `http://127.0.0.1:7860` 瀏覽成品。
