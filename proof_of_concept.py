@@ -10,7 +10,7 @@ def parking_lot_ocr(img_path:str,ntd_per_sec:int=1):
     #進場時間
     results = reader.readtext(img_path,detail=0)
     entry_time = datetime.now(timezone.utc) + timedelta(hours=8) #時區調整
-    entry_time_str = entry_time.strftime("%Y-%m-&d %H:%M:%S")
+    entry_time_str = entry_time.strftime("%Y-%m-%d %H:%M:%S")
     car_plate = results[0]
     if car_plate not in parked_vehicles.keys():
         #進場
@@ -32,4 +32,5 @@ def parking_lot_ocr(img_path:str,ntd_per_sec:int=1):
 parking_lot_ocr("data/car_plate_1.jpg")
 print(parked_vehicles)
 parking_lot_ocr("data/car_plate_1.jpg")
+
 print(parked_vehicles)
